@@ -167,7 +167,7 @@
 
 	<expression name="SeasonViewVisible">[
 		Container.Content(seasons)
-		+ [!String.StartsWith(Container.FolderPath,plugin://) | String.StartsWith(Container.FolderPath,plugin://plugin.video.emby)]
+		+ [!String.StartsWith(Container.FolderPath,plugin://) | String.StartsWith(Container.FolderPath,plugin://plugin.video.emby) | String.StartsWith(Container.FolderPath,plugin://)]
 		]
 	</expression>
 
@@ -179,8 +179,8 @@
 			+ ![String.Contains(Container.FolderPath,BoxSet) + !String.Contains(Container.FolderPath,CollapseBoxSet) + Container.Content(movies)]
 			+ !Window.IsVisible(MyPVRguide.xml)
 		]
-		| [Container.Content(episodes) + String.StartsWith(Container.FolderPath,plugin://) + !String.StartsWith(Container.FolderPath,plugin://plugin.video.emby) + !String.StartsWith(Container.FolderPath,plugin://plugin.video.plexbmc) + !String.StartsWith(Container.FolderPath,plugin://script.embuary) + !String.StartsWith(plugin.video.plexkodiconnect)]
-		| [Container.Content(seasons) + String.StartsWith(Container.FolderPath,plugin://) + !String.StartsWith(Container.FolderPath,plugin://plugin.video.emby)]
+		| [Container.Content(episodes) + !String.StartsWith(Container.FolderPath,plugin://) + !String.StartsWith(Container.FolderPath,plugin://plugin.video.emby) + !String.StartsWith(Container.FolderPath,plugin://plugin.video.plexbmc) + !String.StartsWith(Container.FolderPath,plugin://script.embuary) + !String.StartsWith(plugin.video.plexkodiconnect) + String.StartsWith(Container.FolderPath,plugin://)]
+		| [Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://) + !String.StartsWith(Container.FolderPath,plugin://plugin.video.emby) + String.StartsWith(Container.FolderPath,plugin://)]
 		| Window.IsVisible(MyPics.xml)
 		]
 	</expression>
@@ -188,7 +188,7 @@
 	<expression name="EpisodeViewVisible">[
 		Container.Content(episodes)
 		+ !Window.IsVisible(pictures)
-		+ [!String.StartsWith(Container.FolderPath,plugin://) | String.StartsWith(Container.FolderPath,plugin://plugin.video.emby) | String.StartsWith(Container.FolderPath,plugin://script.embuary) | String.StartsWith(Container.FolderPath,plugin://plugin.video.plexbmc) | String.StartsWith(plugin.video.plexkodiconnect)]
+		+ [!String.StartsWith(Container.FolderPath,plugin://) | String.StartsWith(Container.FolderPath,plugin://plugin.video.emby) | String.StartsWith(Container.FolderPath,plugin://script.embuary) | String.StartsWith(Container.FolderPath,plugin://plugin.video.plexbmc) | String.StartsWith(plugin.video.plexkodiconnect) | String.StartsWith(Container.FolderPath,plugin://)]
 		]
 	</expression>
 
