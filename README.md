@@ -1,6 +1,9 @@
 # skin.embuary
 Embuary is based on the web UI of Emby and has been developed for Emby-For-kodi users, but it doesn't require Emby at all and will also work with a regular Kodi setup.
 
+# Changes Made
+Added episode and season viewtypes for all addons as previously it was only for library content, embuary info/helper and select few addons such as emby and plex. Outside of this it was just lists.
+
 # Terms of use
 With the installation of the skin you agree that you don't use it in combination with blacklisted and illegal Kodi add-ons.
 I'm not associated with any available build and I won't give any support to blacklisted, banned or illegal third party addons.
