@@ -1,5 +1,9 @@
-# skin.embuary
+# skin.embuary(mod) and disclaimer
 Embuary is based on the web UI of Emby and has been developed for Emby-For-kodi users, but it doesn't require Emby at all and will also work with a regular Kodi setup.
+      - This is not a true mod in any sense I just made very miniscule changes, Ive made it embuarymod just for those people who may want to keep their original embuary installs           and also in the case I may have messed something up.
+      
+# Changes Made
+Added episode and season viewtypes for all addons as previously it was only for library content, embuary info/helper and select few addons such as emby and plex. Outside of this it was just lists.
 
 # Terms of use
 With the installation of the skin you agree that you don't use it in combination with blacklisted and illegal Kodi add-ons.
