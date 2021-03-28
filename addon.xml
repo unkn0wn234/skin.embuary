@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.embuarymod-leia" version="18.8.9" name="EmbuaryMOD (Leia)" provider-name="sualfred,unkn0wn234">
+<addon id="skin.embuarymod-leia" version="18.8.9" name="Embuary MOD (Leia)" provider-name="sualfred, unkn0wn234">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="script.embuary.helper" version="1.3.6"/>
