@@ -90,6 +90,12 @@
 				<onclick>ActivateWindow(MediaSettings)</onclick>
 			</item>
 			<item>
+				<label>Media importer settings</label>
+				<label2>&#xfcdd;</label2>
+				<onclick>ActivateWindow(MediaSourceBrowser)</onclick>
+				<visible>System.HasAddon(mediaimporter.emby) | System.HasAddon(mediaimporter.plex)</visible>
+			</item>
+			<item>
 				<label>$LOCALIZE[14205]</label>
 				<label2>&#xf7f3;</label2>
 				<onclick>ActivateWindow(PVRSettings)</onclick>
@@ -226,12 +232,6 @@
 				<label2>&#xf411;</label2>
 				<onclick>Addon.OpenSettings(service.upnext)</onclick>
 				<visible>System.HasAddon(service.upnext)</visible>
-			</item>
-			<item>
-				<label>$INFO[System.AddonTitle(script.tv.show.next.aired)]</label>
-				<label2>&#xf838;</label2>
-				<onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
-				<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 			</item>
 			<item>
 				<label>$INFO[System.AddonTitle(script.artistslideshow)]</label>
